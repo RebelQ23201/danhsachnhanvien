@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Employee List</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <h2>table to add</h2>
+    <div id="table">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name"/>
+        <label for="age">Age</label>
+        <input type="text" name="age" id="age"/>
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address"/>
+        <label for="experience">Years of Experience</label>
+        <input type="number" 
+            step="1"
+            max="2"
+            min="0" 
+            name="experience" 
+            id="experience"/>
+        <label for="phone">Phone number</label>
+        <input type="text" name="phone" id="phone"/>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email"/>
+        <label for="join">Date of Joining</label>
+        <input type="text" name="join" id="join"/>
+        <button id="add-btn">Add</button>
+    </div>
+    <h2>Search</h2>
+    <div id="search">
+        <label for="search-bar">Search By Name</label>
+        <input type="text" name="search-bar" id="search-bar">
+        <button id="search-btn">Search</button>
+    </div>
+    <div id="search-list">
+        <table id="search-emp">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Address</th>
+                    <th>Years of Experience</th>
+                    <th>Phone number</th>
+                    <th>Email ID</th>
+                    <th>Date of Joining</th>
+                </tr>
+                <tbody></tbody>
+            </thead>
+        </table>
+    </div>
+    <h2>show the emp list</h2>
+    <div id="employee">
+        <table id="employee-list">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Address</th>
+                    <th>Years of Experience</th>
+                    <th>Phone number</th>
+                    <th>Email</th>
+                    <th>Date of Joining</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+  </body>
+</html>
